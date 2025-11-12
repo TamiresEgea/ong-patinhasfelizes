@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um Voluntário - ONG Patinhas Felizes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <!-------CABEÇALHO------->
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="cadastro.html">Seja um Voluntário</a></li>
+            </ul>
+        </nav>
+        <h1>Seja um Voluntário</h1>
+        <p>Preencha o formulário</p>
+    </header>
+
+    <!-----CONTEÚDO PRINCIPAL----->
+
+    <main>
+        <section class="imagem-principal">
+            <img src="imagens/cachorro3.jpg" alt="cachorro feliz">
+        </section>
+
+        <section class="caixa-formulario ">
+            <div class="formulario">
+                <form action="form.php">
+                    <h3>Informações Pessoais</h3>
+
+
+                    <p>
+                        <label for="nome">Nome:
+                        <input type="text" id="nome" name="nome" autocomplete="off" placeholder="Escreva seu nome" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="sobrenome">Sobrenome:
+                        <input type="text" id="sobrenome" name="sobrenome" autocomplete="off" placeholder="Escreva seu sobrenome" required><label>
+
+                    </p>
+
+                    <p>
+                        <label for="nasc">Data de Nascimento:
+                        <input type="date" id="nasc" name="nasc">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="cpf">CPF:
+                        <input type="text" id="cpf" name="cpf" maxlength="14" oninput="mascaraCPF(this)" autocomplete="off" placeholder="Escreva seu CPF" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="e-mail">E-mail
+                        <input type="email" id="email" name="email" autocomplete="off" placeholder="Escreva seu e-mail" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:
+                        <input type="tel" id="telefone" name="telefone" maxlength="15" oninput="mascaraTelefone(this)" autocomplete="off" placeholder="Escreva seu telefone com DDD">
+                        </label>
+                    </p>
+
+                    <h3>Endereço</h3>
+
+                    <p>
+                        <label for="endereco">Rua:
+                        <input type="text" id="endereco" name="endereco" autocomplete="off" placeholder= " Nome da rua com n°">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="cidade">Cidade
+                        <input type="text" id="cidade" name="cidade" autocomplete="off" placeholder="Nome da Cidade" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="estado">Estado:
+                        <input type="text" id="estado"  name="estado" autocomplete="off" placeholder="Nome do Estado" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="cep">CEP:
+                        <input type="text" id="cep" name="cep" maxlength="9" oninput="mascaraCEP(this)" autocomplete="off" placeholder="Escreva seu CEP" required>
+                        </label>
+                    </p>
+
+
+                    <div class="botao">
+                 <button type="submit">Enviar</button>
+                </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <footer>
+        <p class="rodape">&copy; 2025 ONG Patinhas Felizes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+
+
+
+    
+</body>
+</html>
